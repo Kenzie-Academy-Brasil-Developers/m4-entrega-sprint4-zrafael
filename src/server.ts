@@ -4,7 +4,7 @@ import AppDataSource from "./data-source";
 (async () => {
 
     await AppDataSource.initialize()
-    .catch((err) => {
+    .catch((err:any) => {
         console.error("Error during Data Source initialization", err)
     })
     
